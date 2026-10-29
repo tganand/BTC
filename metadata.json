@@ -1,0 +1,6 @@
+{
+  "name": "BTC 5-Minute Signal Monitor & Telegram Alerts",
+  "description": "Cloud-hosted 24/7 monitor for BTC 5-minute prediction signals with strict 5-second confirmation, deduplication, and instant Telegram alerts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

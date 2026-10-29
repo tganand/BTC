@@ -1,0 +1,18 @@
+services:
+  btc-monitor:
+    build: .
+    container_name: btc-signal-monitor
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN:-9198281670:AAH9PPB0bXWr1zmCGT_E9VFAV8jn6vlrGmI}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID:-7719238333}
+      - TARGET_URL=${TARGET_URL:-https://rollielevel.com/BTC/predictor/}
+      - POLL_INTERVAL_MS=1000
+      - CONFIRMATION_SECONDS=5
+      - MIN_CONFIDENCE=100
+      - SIGNAL_DIRECTION=UP
+      - DASHBOARD_PIN=1234
+    volumes:
+      - ./data:/app/data

@@ -1,0 +1,412 @@
+{
+  "config": {
+    "enabled": true,
+    "targetUrl": "https://rolflelieveld.com/BTC/predictor/",
+    "pollIntervalMs": 1000,
+    "signalDirection": "UP",
+    "minConfidence": 100,
+    "confirmationSeconds": 5,
+    "minTimeRemainingSeconds": 130,
+    "telegramEnabled": true,
+    "telegramBotToken": "9198281670:AAH9PPB0bXWr1zmCGT_E9VFAV8jn6vlrGmI",
+    "telegramChatId": "7719238333",
+    "dashboardPin": "269657",
+    "allowRepeatOnSameWindow": false,
+    "alertOnDirectionChange": true
+  },
+  "alertedWindows": {
+    "1793277900": {
+      "timestamp": 1793278114489,
+      "direction": "UP",
+      "confidence": 100,
+      "windowRange": "12:45 PM – 12:50 PM",
+      "alertId": "yvz3nxq"
+    },
+    "1793278200": {
+      "timestamp": 1793278244953,
+      "direction": "UP",
+      "confidence": 100,
+      "windowRange": "12:50 PM – 12:55 PM",
+      "alertId": "6o3ubbx"
+    },
+    "1793278500": {
+      "timestamp": 1793278583403,
+      "direction": "UP",
+      "confidence": 100,
+      "windowRange": "12:55 PM – 01:00 PM",
+      "alertId": "a3ri9u8"
+    },
+    "test_window_99999": {
+      "timestamp": 1793277576188,
+      "direction": "UP",
+      "confidence": 100,
+      "windowRange": "01:00 PM – 01:05 PM",
+      "alertId": "alert_1"
+    },
+    "test_window_1793277656180": {
+      "timestamp": 1793277656180,
+      "direction": "UP",
+      "confidence": 100,
+      "windowRange": "01:00 PM – 01:05 PM",
+      "alertId": "alert_1"
+    },
+    "test_window_1793278624443": {
+      "timestamp": 1793278624443,
+      "direction": "UP",
+      "confidence": 100,
+      "windowRange": "01:00 PM – 01:05 PM",
+      "alertId": "alert_1"
+    }
+  },
+  "alerts": [
+    {
+      "id": "a3ri9u8",
+      "timestamp": "2026-10-29T12:56:23.403Z",
+      "signal": {
+        "direction": "UP",
+        "confidence": 100,
+        "window": "12:55 PM – 01:00 PM (#1793278500)",
+        "windowId": "1793278500",
+        "windowStartEnd": "12:55 PM – 01:00 PM",
+        "referencePrice": "$80,053.10",
+        "timestamp": 1793278582048,
+        "source": "https://rolflelieveld.com/BTC/predictor/",
+        "rawText": "UP 100% | 12:55 PM – 01:00 PM | $80,053.10",
+        "rawExplain": "Confidence 100% · based on momentum vs realised volatility"
+      },
+      "windowId": "1793278500",
+      "confirmedDurationSeconds": 5,
+      "status": "SENT",
+      "telegramMessageId": 7,
+      "isSimulation": false
+    },
+    {
+      "id": "6o3ubbx",
+      "timestamp": "2026-10-29T12:50:44.953Z",
+      "signal": {
+        "direction": "UP",
+        "confidence": 100,
+        "window": "12:50 PM – 12:55 PM (#1793278200)",
+        "windowId": "1793278200",
+        "windowStartEnd": "12:50 PM – 12:55 PM",
+        "referencePrice": "$80,082.00",
+        "timestamp": 1793278244033,
+        "source": "https://rolflelieveld.com/BTC/predictor/",
+        "rawText": "UP 100% | 12:50 PM – 12:55 PM | $80,082.00",
+        "rawExplain": "Confidence 100% · based on momentum vs realised volatility"
+      },
+      "windowId": "1793278200",
+      "confirmedDurationSeconds": 5,
+      "status": "SENT",
+      "telegramMessageId": 6,
+      "isSimulation": false
+    },
+    {
+      "id": "yvz3nxq",
+      "timestamp": "2026-10-29T12:48:34.487Z",
+      "signal": {
+        "direction": "UP",
+        "confidence": 100,
+        "window": "12:45 PM – 12:50 PM (#1793277900)",
+        "windowId": "1793277900",
+        "windowStartEnd": "12:45 PM – 12:50 PM",
+        "referencePrice": "$80,067.29",
+        "timestamp": 1793278113518,
+        "source": "https://rolflelieveld.com/BTC/predictor/",
+        "rawText": "UP 100% | 12:45 PM – 12:50 PM | $80,067.29",
+        "rawExplain": "Confidence 100% · based on momentum vs realised volatility"
+      },
+      "windowId": "1793277900",
+      "confirmedDurationSeconds": 5,
+      "status": "SENT",
+      "telegramMessageId": 5,
+      "isSimulation": false
+    },
+    {
+      "id": "dukgyog",
+      "timestamp": "2026-10-29T12:27:24.674Z",
+      "signal": {
+        "direction": "UP",
+        "confidence": 100,
+        "window": "12:27 - 12:32 UTC (Simulated)",
+        "referencePrice": "$98,750.00",
+        "timestamp": 1793276838348,
+        "source": "https://rollielevel.com/BTC/predictor/ (Simulated)"
+      },
+      "confirmedDurationSeconds": 5,
+      "status": "SENT",
+      "telegramMessageId": 4,
+      "isSimulation": true
+    },
+    {
+      "id": "xdow8dx",
+      "timestamp": "2026-10-29T12:23:39.074Z",
+      "signal": {
+        "direction": "UP",
+        "confidence": 100,
+        "window": "12:23 - 12:28 UTC (Simulated)",
+        "referencePrice": "$98,750.00",
+        "timestamp": 1793276612551,
+        "source": "https://rollielevel.com/BTC/predictor/ (Simulated)"
+      },
+      "confirmedDurationSeconds": 5,
+      "status": "SENT",
+      "telegramMessageId": 3,
+      "isSimulation": true
+    }
+  ],
+  "logs": [
+    {
+      "id": "ozwgy50",
+      "timestamp": "2026-10-29T12:57:20.647Z",
+      "level": "INFO",
+      "message": "🧪 [SCENARIO 8] Simulating UP with 100% confidence but window countdown is 01:45 (< 2:10 cutoff) -> Expecting NO alert sent even at 100%!"
+    },
+    {
+      "id": "y2gcbnx",
+      "timestamp": "2026-10-29T12:57:09.193Z",
+      "level": "INFO",
+      "message": "BTC 5-Minute Signal Monitor started."
+    },
+    {
+      "id": "aftm80f",
+      "timestamp": "2026-10-29T12:56:23.403Z",
+      "level": "SUCCESS",
+      "message": "Telegram alert delivered! (Message ID: 7) to chat ID 7719238333"
+    },
+    {
+      "id": "c3r7b2k",
+      "timestamp": "2026-10-29T12:56:22.048Z",
+      "level": "SUCCESS",
+      "message": "[CONFIRMED >5s] UP 100% held continuously for 5.0s! Dispatching Telegram notification."
+    },
+    {
+      "id": "ooaiosb",
+      "timestamp": "2026-10-29T12:56:17.032Z",
+      "level": "INFO",
+      "message": "[CONFIRMATION STARTED] UP (100%) detected for window #1793278500 (12:55 PM – 01:00 PM). Waiting >5s continuous unchanged state.",
+      "data": {
+        "signal": {
+          "direction": "UP",
+          "confidence": 100,
+          "window": "12:55 PM – 01:00 PM (#1793278500)",
+          "windowId": "1793278500",
+          "windowStartEnd": "12:55 PM – 01:00 PM",
+          "referencePrice": "$80,040.49",
+          "timestamp": 1793278577032,
+          "source": "https://rolflelieveld.com/BTC/predictor/",
+          "rawText": "UP 100% | 12:55 PM – 01:00 PM | $80,040.49",
+          "rawExplain": "Confidence 100% · based on momentum vs realised volatility"
+        }
+      }
+    },
+    {
+      "id": "7w3x8ix",
+      "timestamp": "2026-10-29T12:55:00.652Z",
+      "level": "INFO",
+      "message": "Market window transitioned from #1793278200 to new window #1793278500 (12:55 PM – 01:00 PM). Monitoring new window independently."
+    },
+    {
+      "id": "oapfw9y",
+      "timestamp": "2026-10-29T12:50:44.953Z",
+      "level": "SUCCESS",
+      "message": "Telegram alert delivered! (Message ID: 6) to chat ID 7719238333"
+    },
+    {
+      "id": "2p04x4k",
+      "timestamp": "2026-10-29T12:50:44.033Z",
+      "level": "SUCCESS",
+      "message": "[CONFIRMED >5s] UP 100% held continuously for 5.0s! Dispatching Telegram notification."
+    },
+    {
+      "id": "ikdnaa0",
+      "timestamp": "2026-10-29T12:50:39.010Z",
+      "level": "INFO",
+      "message": "[CONFIRMATION STARTED] UP (100%) detected for window #1793278200 (12:50 PM – 12:55 PM). Waiting >5s continuous unchanged state.",
+      "data": {
+        "signal": {
+          "direction": "UP",
+          "confidence": 100,
+          "window": "12:50 PM – 12:55 PM (#1793278200)",
+          "windowId": "1793278200",
+          "windowStartEnd": "12:50 PM – 12:55 PM",
+          "referencePrice": "$80,082.01",
+          "timestamp": 1793278239010,
+          "source": "https://rolflelieveld.com/BTC/predictor/",
+          "rawText": "UP 100% | 12:50 PM – 12:55 PM | $80,082.01",
+          "rawExplain": "Confidence 100% · based on momentum vs realised volatility"
+        }
+      }
+    },
+    {
+      "id": "7jkudpo",
+      "timestamp": "2026-10-29T12:50:00.841Z",
+      "level": "INFO",
+      "message": "Market window transitioned from #1793277900 to new window #1793278200 (12:50 PM – 12:55 PM). Monitoring new window independently."
+    },
+    {
+      "id": "sg7z32r",
+      "timestamp": "2026-10-29T12:48:34.488Z",
+      "level": "SUCCESS",
+      "message": "Telegram alert delivered! (Message ID: 5) to chat ID 7719238333"
+    },
+    {
+      "id": "xr28mgj",
+      "timestamp": "2026-10-29T12:48:33.518Z",
+      "level": "SUCCESS",
+      "message": "[CONFIRMED >5s] UP 100% held continuously for 5.0s! Dispatching Telegram notification."
+    },
+    {
+      "id": "tkzxo0t",
+      "timestamp": "2026-10-29T12:48:28.498Z",
+      "level": "INFO",
+      "message": "[CONFIRMATION STARTED] UP (100%) detected for window #1793277900 (12:45 PM – 12:50 PM). Waiting >5s continuous unchanged state.",
+      "data": {
+        "signal": {
+          "direction": "UP",
+          "confidence": 100,
+          "window": "12:45 PM – 12:50 PM (#1793277900)",
+          "windowId": "1793277900",
+          "windowStartEnd": "12:45 PM – 12:50 PM",
+          "referencePrice": "$80,054.01",
+          "timestamp": 1793278108498,
+          "source": "https://rolflelieveld.com/BTC/predictor/",
+          "rawText": "UP 100% | 12:45 PM – 12:50 PM | $80,054.01",
+          "rawExplain": "Confidence 100% · based on momentum vs realised volatility"
+        }
+      }
+    },
+    {
+      "id": "em8nlne",
+      "timestamp": "2026-10-29T12:47:33.578Z",
+      "level": "INFO",
+      "message": "BTC 5-Minute Signal Monitor started."
+    },
+    {
+      "id": "xfbd0oi",
+      "timestamp": "2026-10-29T12:42:34.642Z",
+      "level": "INFO",
+      "message": "BTC 5-Minute Signal Monitor started."
+    },
+    {
+      "id": "6kq5ek9",
+      "timestamp": "2026-10-29T12:27:24.675Z",
+      "level": "SUCCESS",
+      "message": "Telegram alert delivered! (Message ID: 4) to chat ID 7719238333"
+    },
+    {
+      "id": "kqfigg5",
+      "timestamp": "2026-10-29T12:27:23.715Z",
+      "level": "SUCCESS",
+      "message": "[CONFIRMED >5s] UP 100% held continuously for 5.0s! Dispatching Telegram notification."
+    },
+    {
+      "id": "0u96mfw",
+      "timestamp": "2026-10-29T12:27:18.679Z",
+      "level": "INFO",
+      "message": "[CONFIRMATION STARTED] UP (100%) detected for \"12:27 - 12:32 UTC (Simulated)\". Starting strict 5s timer.",
+      "data": {
+        "signal": {
+          "direction": "UP",
+          "confidence": 100,
+          "window": "12:27 - 12:32 UTC (Simulated)",
+          "referencePrice": "$98,750.00",
+          "timestamp": 1793276838348,
+          "source": "https://rollielevel.com/BTC/predictor/ (Simulated)"
+        }
+      }
+    },
+    {
+      "id": "gkqzzpd",
+      "timestamp": "2026-10-29T12:27:18.348Z",
+      "level": "INFO",
+      "message": "🧪 [SIMULATION STARTED] Generating continuous UP 100% signal for 7 seconds to test full 5s confirmation."
+    },
+    {
+      "id": "jzk9fds",
+      "timestamp": "2026-10-29T12:26:39.285Z",
+      "level": "INFO",
+      "message": "BTC 5-Minute Signal Monitor started."
+    },
+    {
+      "id": "aqn80ns",
+      "timestamp": "2026-10-29T12:24:40.308Z",
+      "level": "WARN",
+      "message": "[CONFIRMATION CANCELLED after 2.0s] Confidence is 92% (minimum: 100%). No notification sent."
+    },
+    {
+      "id": "1nx60tk",
+      "timestamp": "2026-10-29T12:24:40.282Z",
+      "level": "WARN",
+      "message": "🧪 [SIMULATION TRIGGER] Dropping confidence to 92% at 3s to trigger confirmation cancellation!"
+    },
+    {
+      "id": "h6xmgx4",
+      "timestamp": "2026-10-29T12:24:38.306Z",
+      "level": "INFO",
+      "message": "[CONFIRMATION STARTED] UP (100%) detected for \"12:24 - 12:29 UTC (Simulated)\". Starting strict 5s timer.",
+      "data": {
+        "signal": {
+          "direction": "UP",
+          "confidence": 100,
+          "window": "12:24 - 12:29 UTC (Simulated)",
+          "referencePrice": "$98,750.00",
+          "timestamp": 1793276677282,
+          "source": "https://rollielevel.com/BTC/predictor/ (Simulated)"
+        }
+      }
+    },
+    {
+      "id": "cor4mey",
+      "timestamp": "2026-10-29T12:24:37.282Z",
+      "level": "INFO",
+      "message": "🧪 [SIMULATION STARTED] Generating UP 100% for 3 seconds, then dropping to 92% to test cancellation."
+    },
+    {
+      "id": "wmo3xih",
+      "timestamp": "2026-10-29T12:23:40.552Z",
+      "level": "INFO",
+      "message": "🧪 [SIMULATION ENDED] Test UP 100% simulation completed."
+    },
+    {
+      "id": "fn8ktio",
+      "timestamp": "2026-10-29T12:23:39.075Z",
+      "level": "SUCCESS",
+      "message": "Telegram alert delivered! (Message ID: 3) to chat ID 7719238333"
+    },
+    {
+      "id": "32k1z57",
+      "timestamp": "2026-10-29T12:23:37.752Z",
+      "level": "SUCCESS",
+      "message": "[CONFIRMED >5s] UP 100% held continuously for 5.0s! Dispatching Telegram notification."
+    },
+    {
+      "id": "l87v9t3",
+      "timestamp": "2026-10-29T12:23:32.738Z",
+      "level": "INFO",
+      "message": "[CONFIRMATION STARTED] UP (100%) detected for \"12:23 - 12:28 UTC (Simulated)\". Starting strict 5s timer.",
+      "data": {
+        "signal": {
+          "direction": "UP",
+          "confidence": 100,
+          "window": "12:23 - 12:28 UTC (Simulated)",
+          "referencePrice": "$98,750.00",
+          "timestamp": 1793276612551,
+          "source": "https://rollielevel.com/BTC/predictor/ (Simulated)"
+        }
+      }
+    },
+    {
+      "id": "chggkws",
+      "timestamp": "2026-10-29T12:23:32.551Z",
+      "level": "INFO",
+      "message": "🧪 [SIMULATION STARTED] Generating continuous UP 100% signal for 7 seconds to test full 5s confirmation."
+    },
+    {
+      "id": "7xjxfzv",
+      "timestamp": "2026-10-29T12:23:20.607Z",
+      "level": "INFO",
+      "message": "BTC 5-Minute Signal Monitor started."
+    }
+  ]
+}
